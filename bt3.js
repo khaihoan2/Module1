@@ -13,4 +13,4 @@ function countCharacters(str) {
 }
 let str = prompt("nhập vào chuỗi bất kỳ");
 let result = countCharacters(str);
-alert("Tổng số ký tự nguyên âm tìm được trong chuỗi là: " + result);
+alert("Tổng số ký tự tìm được trong chuỗi: " + result);
