@@ -1,7 +1,7 @@
 let vowel = ["a", "o", "e", "u", "i"];
-let countVowel = null;
+let countVowe = null;
 function countCharacters(str) {
-    countVowel = 0;
+    countVowe = 0;
     for (let i = 0; i < str.length; i++) {
         for (let j = 0; j < vowel.length; j++) {
             if (str[1] == vowel[j]) {

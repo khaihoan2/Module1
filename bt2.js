@@ -1,18 +1,16 @@
-let array = [2, 5, 1, 4, 6, 9, 7, 8, 10, 3];
-function findValue(value, array) {
-    let find = value;
-    let result = false;
-    for (let i = 0; i < array.length; i++) {
-        if (find == array[i]) {
-            result = true;
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let num = +prompt("Nhập vào giá trị bạn cần kiểm tra: ");
+
+function check() {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] = num) {
+            alert("Số bạn vừa nhập có trong mảng cho trước!");
+            break;
+        } else {
+            alert("Số bạn vừa nhập không có trong mảng cho trước!");
             break;
         }
     }
-    if (result) {
-        return alert("Giá trị " + " có nằm trong mảng")
-    } else {
-        return alert("Giá trị " + " không nằm trong mảng")
-    }
 }
 
-findValue(9,array);
+check();
