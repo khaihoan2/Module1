@@ -1,8 +1,17 @@
 class Animal {
     name;
     weight;
+
     constructor(name, weight) {
         this.name = name;
+        this.weight = weight;
+    }
+
+    setName(name) {
+        this.name = name;
+    }
+
+    setWeight(weight) {
         this.weight = weight;
     }
 
@@ -10,22 +19,19 @@ class Animal {
         return this.name;
     }
 
-    setName(animal) {
-        this.name = animal;
-    }
-
     getWeight() {
         return this.weight;
     }
 
-    setWeight(animal) {
-        this.weight = animal;
+    toString() {
+        return "Name Is: " + this.getName() + " & Weight Is: " + this.getWeight();
     }
 }
-let objAnimal1 = new Animal("Elephant","45.6");
-let name = objAnimal1.getName();
-let weight = objAnimal1.getWeight();
+
+let objAnimal1 = new Animal();
+objAnimal1.setName("Elephant");
+objAnimal1.setWeight(45.6);
 alert(objAnimal1.toString());
-let objAnimal2 = new Animal("Mouse","45.6")
-let name = objAnimal2.getName();
-let weight = objAnimal2.getWeight();
+
+let objAnimal2 = new Animal("Mickey", 15.7);
+objAnimal2.setName("Mouse");
